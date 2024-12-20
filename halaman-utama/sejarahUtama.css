@@ -1,0 +1,323 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: -30%;
+    text-align: center;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../assets/image/forest.png') center/cover no-repeat;
+    filter: brightness(0.7);
+    z-index: -1; 
+}
+
+.content {
+    position: relative;
+    z-index: 2; 
+    margin-top: 500px;
+    padding: 20px;
+    color: white;
+    max-width: 800px; 
+    width: 100%; 
+}
+.content > h1 {
+    font-family: 'Sevillana', sans-serif;
+    font-size: 3em;
+    letter-spacing: 3px;
+}
+.content > p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
+}
+
+.timeline {
+    position: relative;
+    padding: 20px 0;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #88C273;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px; 
+    border-radius: 6px;
+}
+
+.timeline-item {
+    padding: 20px;
+    background: white;
+    border-radius: 6px;
+    position: relative;
+    width: 45%;
+    margin: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.timeline-item.left {
+    left: 0;
+}
+
+.timeline-item.right {
+    left: 50%;
+}
+
+.timeline-item h3 {
+    margin: 0;
+    color: #88C273;
+    font-family: 'Sevillana', sans-serif;
+    font-size: 2em;
+    letter-spacing: 3px;
+}
+
+.timeline-item p {
+    color: #666;
+    font-size: 1em;
+    font-family: 'Poppins', sans-serif;
+
+}
+.anchor{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.anchor > a {
+    padding: 10px 15px;
+    background-color: #88C273;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.4s, color 0.4s;
+}
+
+.anchor > a:hover {
+    background-color: white;
+    color: #88C273;
+}
+
+@media (max-width: 784px) {
+    .timeline-item {
+        width: 93%;
+        margin: 10px 0; 
+    }
+
+    .timeline-item.right {
+        left: 0;
+    }
+    .content > h1{
+        margin: -200px 0 20px;
+    }
+
+    .content > p {
+        margin: 0 0 50px;
+    }
+    .timeline::after {
+        display: none;
+    }
+}
+
+@media (max-width: 400px) {
+    .timeline-item h3 {
+        font-size: 1.2em; 
+    }
+
+    .timeline-item p {
+        font-size: 0.9em; 
+    }
+
+    .timeline-item {
+        width: 87%
+    }
+}
+
+.footer {
+  padding-top: 60px;
+  background-color: #333;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8rem;
+}
+
+.footer-logo{
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.footer-logo img {
+  width: 50px;
+  position: absolute;
+  top: -40px;
+  left: 40px;
+}
+.container-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.container-footer > div > h3 {
+  font-family: "Sevillana", sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 2.5px;
+  margin-bottom: 18px;
+}
+
+.container-footer > div > p {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8rem;
+  line-height: 2;
+}
+
+.container-footer-description {
+  margin-left: 40px;
+  width: 35%;
+  text-align: justify;
+}
+.container-footer-article, .container-footer-post, .container-footer-another {
+  margin-left: 40px;
+  width: 25%;
+  text-align: justify;
+}
+.container-footer-another {
+  margin: 0 40px 0 0;
+}
+
+.container-footer-description, .container-footer-article, .container-footer-post, .container-footer-another {
+  margin-top: 0px;
+}
+
+.container-footer-article > ul, .container-footer-post > ul, .container-footer-another > ul {
+  list-style-type: none;
+  margin-top: 10px;
+}    
+
+.container-footer-article > ul > li > a,  .container-footer-post > ul > li > a, .container-footer-another > ul > li > a{
+  color: white;
+  text-decoration: none;
+  position: relative;
+}
+
+.container-footer-article > ul > li > a::after, .container-footer-post > ul > li > a::after, .container-footer-another > ul > li > a::after{
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0%; 
+  height: 2px; 
+  background-color: white;
+  transition: width 0.3s ease; 
+}
+
+
+.container-footer-article > ul > li > a:hover::after, .container-footer-post > ul > li > a:hover::after, .container-footer-another > ul > li > a:hover::after{
+  width: 105%;
+}
+
+.copyright{
+  position: relative;
+  margin-top: 80px;
+}
+
+.copyright-content{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 15px;
+}
+.copyright-content > p{
+  width: 50%;
+  font-size: 0.7rem;
+  color: #E4E0E1;
+  opacity: 0.7;
+}
+
+.copyright-content > p:nth-child(1){
+  text-align: left;
+}
+.copyright-content > p{
+  text-align: right;
+}
+@media(max-width: 1396px){
+  .container-footer-description {
+      width: 25%;
+  }
+}
+
+@media(max-width : 1284px){
+  .container-footer-another {
+      margin-right: 10px;
+  }
+}
+
+@media (max-width: 1256px){
+  .container-footer-description, .container-footer-article, .container-footer-another {
+      width: 20%;
+  }
+
+  .container-footer-post {
+      width: 10%;
+      margin-left: 0;
+  }
+
+  .container-footer-description {
+      margin-left: 20px;
+  }
+}
+
+@media(max-width : 1185px){
+  .container-footer{
+      flex-wrap: wrap;
+      gap: 30px;
+      margin: 0 60px;
+  }
+  .container-footer-description {
+      margin-left: 0;
+  }
+  .container-footer-description, .container-footer-article {
+      width: 40%;
+
+  }
+  .container-footer-post, .container-footer-another {
+      width: 40%;
+      margin-top: 30px;
+  }
+}
+
+@media (max-width: 789px) {
+  .container-footer-post{
+      width: 45%;
+  }
+  .container-footer-another{
+      width: 45%;
+      margin-right: 20px;
+  }
+}
+
+@media (max-width: 712px) {
+  .container-footer {
+      flex-direction: column;
+      gap: 40px;
+  }
+  .container-footer-description, .container-footer-article, .container-footer-post, .container-footer-another {
+      width: 100%;
+      margin: 0;
+  }
+}

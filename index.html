@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nusantara</title>
+  <link rel="shortcut icon" href="assets/image/Logo.svg" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sevillana&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <button class="hamburger" aria-label="Menu" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="#">Beranda</a></li>
+      <li><a href="/halaman-utama/sejarahUtama.html">Sejarah</a></li>
+      <li><a href="/halaman-utama/budayaUtama.html">Budaya</a></li>
+      <li><a href="/halaman-utama/galeri.html">Galeri</a></li>
+      <li><a href="/halaman-utama/kegiatanUtama.html">Kegiatan</a></li>
+    </ul>
+    <div class="navbar-search">
+      <input type="text" class="search-input" placeholder="Search...">
+      <button class="search-button">
+        <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="24px">
+          <path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-content">
+      <div class="content">
+        <div class="header-title">
+          <h1 class="typing-animation" id="animatedText">Nusantara</h1>
+        </div>
+        <div class="description fade-in" id="animatedParagraph">
+          <p style="text-align: center;">
+            Hari Nusantara adalah peringatan nasional di Indonesia yang jatuh setiap tanggal 13 Desember. Hari ini diperingati untuk mengenang pengakuan dunia internasional terhadap Deklarasi Djuanda pada tanggal 13 Desember 1957. Deklarasi ini menyatakan bahwa Indonesia adalah negara kepulauan yang memiliki kedaulatan atas wilayah laut di antara pulau-pulau, sehingga wilayah laut Indonesia menjadi satu kesatuan yang utuh.
+          </p>
+          <a href="#content-beranda">Selengkapnya</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="content-beranda" class="content-beranda">
+    <div class="content-main">
+      <h1>Nusantara</h1>
+      <p>Kekayaan Indonesia dengan ribuan pulau, beragam budaya, dan keindahan alam yang tiada duanya.</p>
+
+      <div class="container-information">
+        <div class="card-information" id="card-information">
+          <p class="highlight-card">17,000+</p>
+          <p>Pulau di Indonesia</p>
+        </div>
+        <div class="card-information" id="card-information">
+          <p class="highlight-card">300+</p>
+          <p>Suku Bangsa</p>
+        </div>
+        <div class="card-information" id="card-information">
+          <p class="highlight-card">700+</p>
+          <p>Bahasa Daerah</p>
+        </div>
+        <div class="card-information" id="card-information">
+          <p class="highlight-card">38</p>
+          <p>Provinsi di Indonesia</p>
+        </div>      
+      </div>
+    </div>
+  </section>
+
+  <section id="yt-container" class="yt-container">
+
+    <h1>Keindahan Nusantara</h1>
+
+    <iframe id="yt-video" src="https://www.youtube.com/embed/IrcoYCD9-nM?si=lA18kWRqm85EHQRw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+  </section>
+
+  <section class="card-navigation">
+    <h1>Cari Tahu Lebih Tentang Hari Nusantara</h1>
+    <div class="card-container">
+      <a href="halaman-utama/sejarahUtama.html" class="card" style="background-image: url('./assets/image/Soeharto.jpg');">
+        <div class="card-title">Sejarah</div>
+      </a>
+      <a href="halaman-utama/budayaUtama.html" class="card" style="background-image: url('./assets/image/Karapan Sapi a Cow Racing in Madura Island.jpg');">
+        <div class="card-title">Budaya</div>
+      </a>
+      <a href="halaman-utama/galeri.html" class="card" style="background-image: url('./assets/image/pexels-ollivves-931007.jpg');">
+        <div class="card-title">Galeri</div>
+      </a>
+      <a href="halaman-utama/kegiatanUtama.html" class="card" style="background-image: url('./assets/image/pexels-tomfisk-3011582.jpg');">
+        <div class="card-title">Kegiatan</div>
+      </a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-logo">
+        <img src="../assets/image/Logo.svg" alt="Logo">
+    </div>
+    <div class="container-footer">
+        <div class="container-footer-description">
+            <h3>Hari Nusantara</h3>
+            <p>Hari Nusantara, yang diperingati setiap 13 Desember, adalah momen penting untuk merayakan kekayaan dan keberagaman laut Indonesia, serta memperkuat kesadaran akan pentingnya menjaga kedaulatan dan keberlanjutan wilayah maritim kita.</p>
+        </div>
+        <div class="container-footer-article">
+            <h3>Artikel Terkait</h3>
+            <ul>
+                <li>
+                    <a href="https://maritim.go.id/">Kementerian Koordinator Bidang Maritim dan Investasi</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="https://kkp.go.id/">Kementerian Kelautan dan Perikanan</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="https://indonesiakaya.com/">Indonesia Kaya</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="https://www.conservation.org/">Conservation International Indonesia</a>
+                </li>
+            </ul>
+        </div>
+        <div class="container-footer-post">
+            <h3>Postingan Terkait</h3>
+            <ul>
+                <li>
+                    <a href="https://www.instagram.com/p/C0yoBQPp5Vy/?igsh=bWw5cmxnMXc4bnpx">@characterbuildingcamp</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="https://www.instagram.com/p/C0yKkNbPyg3/?igsh=MThuOHQxN242aXQ1ZQ%3D%3D">@bpom_ri</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="https://www.instagram.com/p/C0xw7ymxVjd/?igsh=aDduanJxcnd6emRw">@penseepis</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="https://www.instagram.com/p/DDgH34rSHox/">@bppsdm_kp</a>
+                </li>
+            </ul>
+        </div>
+        <div class="container-footer-another">
+            <h3>Kebudayaan Indonesia</h3>
+            <ul>
+                <li>
+                    <a href="https://maritimemuseum.id/">Museum Maritim Indonesia</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="https://komodonp.com/">Pulau Komodo</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="https://heritagejkt.org/">Komunitas Warisan Indonesia</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="https://www.museumnasional.or.id/">Museum Nasional Indonesia</a>
+                </li>
+            </ul>
+          </div>
+        </div>
+    <div class="copyright">
+      <hr>
+      <div class="copyright-content">
+        <p>&copy; 2024 Hari Nusantara. All right reversed</p>
+        <p>Versi 1.0.0 - Terakhir diperbarui Desember 2024</p>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="script.js"></script>
+  </body>
+  </html>
+
